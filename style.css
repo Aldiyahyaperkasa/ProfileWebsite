@@ -24,6 +24,7 @@ a {
   display: flex;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(204, 24, 60, 0.192)),
     /* #02f8e083 */ url(image/background.jpeg);
+  background-position: top center;
   background-size: cover;
   background-attachment: fixed;
   position: relative;
