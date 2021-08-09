@@ -22,7 +22,7 @@ a {
 
 .jumbotron {
   display: flex;
-  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(34, 34, 34, 0.603)),
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(204, 24, 60, 0.192)),
     /* #02f8e083 */ url(image/background.jpeg);
   background-size: cover;
   background-attachment: fixed;
@@ -97,75 +97,89 @@ section a:hover:not(.jumbotron) {
 }
 
 /* akhir about me */
-/* project */
-#projects .projects {
-  flex-direction: column;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 100px 0;
-}
-#projects .projects-header h1 {
-  margin-bottom: 50px;
-}
-#projects .all-projects {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-#projects .project-item {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  width: 80%;
-  margin: 20px auto;
-  overflow: hidden;
-  border-radius: 10px;
-}
-#projects .project-info {
-  padding: 30px;
-  flex-basis: 50%;
-  height: 100%;
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  flex-direction: column;
-  background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
-  color: white;
-}
-#projects .project-info h1 {
-  font-size: 4rem;
-  font-weight: 500;
-}
-#projects .project-info h2 {
-  font-size: 1.8rem;
-  font-weight: 500;
-  margin-top: 10px;
-}
-#projects .project-info p {
-  color: white;
-}
-#projects .project-img {
-  flex-basis: 1%;
-  height: 100px;
-  overflow: hidden;
+/* my teams */
+
+.container #container-cards {
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
 }
-#projects .project-img:after {
-  content: "";
+
+.container #container-cards .cards {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  background: linear-gradient(
+    crimson,
+    crimson 30%,
+    rgba(31, 30, 30) 30%,
+    rgba(31, 30, 30)
+  );
+  margin: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.container #container-cards .cards .background-img {
   position: absolute;
-  left: 0;
   top: 0;
-  height: 100%;
+  left: 0;
   width: 100%;
-  background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
-  opacity: 0.7;
+  height: 100%;
+  transition: 0.5s;
+  z-index: 100000;
+  transform-origin: top;
+  border-radius: 10px;
+  overflow: hidden;
 }
-#projects .project-img img {
-  transition: 0.3s ease transform;
+
+.container #container-cards .cards:hover .background-img {
+  transform: translateY(20px) scale(0.5);
 }
-#projects .project-item:hover .project-img img {
-  transform: scale(1.1);
+
+.container #container-cards .cards .background-img img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
-/* akhir project */
+
+.container #container-cards .content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 20%;
+  transform: translateY(50%);
+  transition: 0.5s;
+}
+
+.container #container-cards:hover .content {
+  transform: translateY(0);
+}
+
+.container #container-cards .content .details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.container #container-cards .content h2 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.container #container-cards .content h2 span {
+  font-size: 1.2rem;
+}
+/* akhir my teams */
