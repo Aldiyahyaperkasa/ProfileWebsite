@@ -7,6 +7,11 @@
 
     <!-- query -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+    <!-- swiper.js -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
 
     <!-- Bootstrap CSS -->
     <link
@@ -15,23 +20,18 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
-    <!-- swiper.js -->
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
-    />
 
     <!-- style css -->
     <link rel="stylesheet" href="style.css" />
     <title>Hello, world!</title>
   </head>
 
-  <body>
+  <body id="dashboard">
     <!-- navbar -->
     <!-- <nav class="navbar navbar-expand-lg navbar-dark bg-danger"> -->
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-danger">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">My Portofolio</a>
+        <a class="navbar-brand" href="#">My Profile</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -43,16 +43,22 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+        <div class="collapse navbar-collapse text-danger fst-normal">
+          <ul class="navbar-nav ms-auto fs-5">
+            <li class="nav-item pe-2">
+              <a class="" aria-current="page" href="#dashboard">Home</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Features</a>
+            <li class="nav-item pe-2">
+              <a class="" href="#about">about</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Pricing</a>
+            <li class="nav-item pe-2">
+              <a class="" href="#resume">resume</a>
+            </li>
+            <li class="nav-item pe-2">
+              <a class="" href="#gallery">gallery</a>
+            </li>
+            <li class="nav-item pe-2">
+              <a class="" href="#contact">contact</a>
             </li>
           </ul>
         </div>
@@ -92,16 +98,16 @@
             <h1>About Me</h1>
             <h2 class="text-danger">Mahasiswa IT | Freelancer</h2>
             <p class="pt-3">
-              saya seorang Mahasiswa Teknik Informatika semester tengah. Saya
-              memiliki pengalaman menjadi CO-Leader di salah satu komunitas game
-              online dan berpengalaman bekerja secara tim. selain itu saya
-              adalah seorang yang haus akan ilmu pemrogramman, mengikuti kursus
-              dan workshop saat waktu luang, serta memberikan bantuan rekan
-              rekan saya yang kesulitan apabila mendapatkan studi kasus dari
-              dosen ataupun project tertentu untuk mengasah ilmu saya di bidang
-              pemrogramman. Dan saya adalah orang yang semangat mencari peluang
-              kerja maupun pelatihan untuk mengasah kemampuan saya di bidang
-              software engineer.
+              saya seorang Mahasiswa Teknik Informatika semester tengah. Saat
+              ini saya juga bekerja di salah satu Badan Usaha Milik Negara Yaitu
+              BPJS Ketenagakerjaan di bagian Admin. Sebagai seorang mahasiswa,
+              saya selalu meningkatkan diri dalam bidang ilmu pemrograman,
+              mengikuti kursus dan workshop saat waktu luang, serta sering
+              berdiskusi dengan rekan rekan saya apabila mendapatkan studi kasus
+              dari dosen ataupun project tertentu untuk mengasah ilmu saya di
+              bidang pemrograman. Dan saya adalah orang yang semangat mencari
+              peluang kerja maupun pelatihan untuk mengasah kemampuan saya di
+              bidang software engineer.
             </p>
           </div>
         </div>
@@ -109,9 +115,125 @@
     </section>
     <!-- akhir about me -->
 
-    <!-- my teams -->
-    <section class="container pb-5" id="my-teams">
-      <h1 class="text-center m-5 text-danger"><span>My</span> Teams</h1>
+    <!-- awal resume -->
+    <section class="testimonials" id="resume">
+      <div class="container">
+        <h2 class="text-center m-5 text-danger"><span>My</span> Resume</h2>
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="card">
+                <div class="layer"></div>
+                <div class="content">
+                  <p>
+                    saya lulusan Sekolah Dasar Negeri 007 Bontang Utara -
+                    Bontang dari 2008 - 2014
+                  </p>
+                  <div class="imgSwipe">
+                    <img src="image/SD007.jfif" alt="#" />
+                  </div>
+                  <div class="details">
+                    <h2 class="text-start">SDN 007 Bontang Utara</h2>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card">
+                <div class="layer"></div>
+                <div class="content">
+                  <p>
+                    saya lulusan Sekolah Menengah Pertama Negeri 9 Bontang Utara
+                    - Bontang dari 2014 - 2017
+                  </p>
+                  <div class="imgSwipe">
+                    <img src="image/SMP.jpg" alt="#" />
+                  </div>
+                  <div class="details">
+                    <h2>SMPN 9 Bontang utara</h2>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card">
+                <div class="layer"></div>
+                <div class="content">
+                  <p>
+                    saya lulusan Sekolah Menengah Atas Negeri 3 Bontang Utara -
+                    Bontang dari 20017 - 2020
+                  </p>
+                  <div class="imgSwipe">
+                    <img src="image/SMA3.JPEG" alt="#" />
+                  </div>
+                  <div class="details">
+                    <h2>SMAN 3 Bontang Utara</h2>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card">
+                <div class="layer"></div>
+                <div class="content">
+                  <p>
+                    saya lulusan Sekolah Menengah Atas Negeri 3 Bontang Utara -
+                    Bontang dari 20017 - 2020
+                  </p>
+                  <div class="imgSwipe">
+                    <img src="image/SMA3.JPEG" alt="#" />
+                  </div>
+                  <div class="details">
+                    <h2>SMAN 3 Bontang Utara</h2>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card">
+                <div class="layer"></div>
+                <div class="content">
+                  <p>
+                    saya pernah mengikuti pelatihan sebagai administrasi
+                    perkantoran dari juni 2021 - agustus 2021
+                  </p>
+                  <div class="imgSwipe">
+                    <img src="image/suvi.jpeg" alt="#" />
+                  </div>
+                  <div class="details">
+                    <h2>Suvi Training</h2>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="card">
+                <div class="layer"></div>
+                <div class="content">
+                  <p>
+                    saya memiliki pengalaman bekerja di salah satu Badan Usaha
+                    Milik Negara yaitu BPJS Ketenagakerjaan dibagian Kepesertaan
+                    / Administrasi dari Agustus 2021 - Sekarang
+                  </p>
+                  <div class="imgSwipe">
+                    <img src="image/bpjs2.jpeg" alt="#" />
+                  </div>
+                  <div class="details">
+                    <h2>BPJS Ketenagakerjaan</h2>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- akhir resume -->
+
+    <!-- my galeri -->
+    <section class="container pb-5" id="gallery">
+      <h1 class="text-center m-5 text-danger"><span>My</span> Gallery</h1>
       <div id="container-cards">
         <div class="cards">
           <div class="background-img">
@@ -152,6 +274,20 @@
             </div>
           </div>
         </div>
+
+        <div class="cards">
+          <div class="background-img">
+            <img src="image/bpjs1.jpeg" alt="" />
+          </div>
+          <div class="content">
+            <div class="details">
+              <h2 class="text-light">
+                BPJamsostek <br />
+                <span>Praktek Kerja Lapangan</span>
+              </h2>
+            </div>
+          </div>
+        </div>
         <div class="cards">
           <div class="background-img">
             <img src="image/salak2.jpeg" alt="" />
@@ -165,110 +301,112 @@
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <!-- akhir my teams -->
-
-    <!-- awal project -->
-    <section class="testimonials">
-      <h2 class="text-center m-5 pt-5 text-danger"><span>My</span> Project</h2>
-      <div class="swiper mySwiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <div class="card">
-              <div class="layer"></div>
-              <div class="content">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Pariatur quaerat omnis alias ut ipsam, id possimus excepturi
-                  officiis. Suscipit autem aut
-                </p>
-                <div class="imgSwipe">
-                  <img src="image/service laptop.jpeg" alt="#" />
-                </div>
-                <div class="details">
-                  <h2 class="text-center">my project</h2>
-                </div>
-              </div>
+        <div class="cards">
+          <div class="background-img">
+            <img src="image/lab.jpeg" alt="" />
+          </div>
+          <div class="content">
+            <div class="details">
+              <h2 class="text-light">
+                praktikum <br />
+                <span>Teknik Informatika</span>
+              </h2>
             </div>
           </div>
-          <div class="swiper-slide">
-            <div class="card">
-              <div class="layer"></div>
-              <div class="content">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Pariatur quaerat omnis alias ut ipsam, id possimus excepturi
-                  officiis. Suscipit autem aut
-                </p>
-                <div class="imgSwipe">
-                  <img src="image/bpjs ketenagakerjaan.jpeg" alt="#" />
-                </div>
-                <div class="details">
-                  <h2>my project</h2>
-                </div>
-              </div>
-            </div>
+        </div>
+        <div class="cards">
+          <div class="background-img">
+            <img src="image/fosbon.jpeg" alt="" />
           </div>
-          <div class="swiper-slide">
-            <div class="card">
-              <div class="layer"></div>
-              <div class="content">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Pariatur quaerat omnis alias ut ipsam, id possimus excepturi
-                  officiis. Suscipit autem aut
-                </p>
-                <div class="imgSwipe">
-                  <img src="image/instagram clone.png" alt="#" />
-                </div>
-                <div class="details">
-                  <h2>my project</h2>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="card">
-              <div class="layer"></div>
-              <div class="content">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Pariatur quaerat omnis alias ut ipsam, id possimus excepturi
-                  officiis. Suscipit autem aut
-                </p>
-                <div class="imgSwipe">
-                  <img src="image/salak.jpeg" alt="#" />
-                </div>
-                <div class="details">
-                  <h2>my project</h2>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="swiper-slide">
-            <div class="card">
-              <div class="layer"></div>
-              <div class="content">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Pariatur quaerat omnis alias ut ipsam, id possimus excepturit
-                  officiis. Suscipit autem aut
-                </p>
-                <div class="imgSwipe">
-                  <img src="image/suvi.jpeg" alt="#" />
-                </div>
-                <div class="details">
-                  <h2>my project</h2>
-                </div>
-              </div>
+          <div class="content">
+            <div class="details">
+              <h2 class="text-light">
+                Forum Osis Bontang <br />
+                <span>Pelatihan Android</span>
+              </h2>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <!-- akhir project -->
+    <!-- akhir my galeri -->
+
+    <!-- contact me -->
+
+    <section class="container mb-5" id="contact">
+      <div class="row m-5 text-center pb-2">
+        <div class="">
+          <h2>Contact Me</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 cont-details">
+          <div class="contact">
+            <div class="">
+              <span class=""></span>
+            </div>
+            <div class="cont-right">
+              <h6 class="text-danger">Contact</h6>
+              <p><a href="tel:+62 812 1231 2668">0812 1231 2668</a></p>
+            </div>
+          </div>
+          <div class="contact margin-up">
+            <div class="cont-left text-center">
+              <span class=""></span>
+            </div>
+            <div class="cont-right">
+              <h6 class="text-danger">Email Saya</h6>
+              <p>
+                <a href="aldiyahyap@gmail.com" class="mail"
+                  >aldiyahyap@gmail.com</a
+                >
+              </p>
+            </div>
+          </div>
+          <div class="contact margin-up">
+            <div class="cont-left text-center">
+              <span class=""></span>
+            </div>
+            <div class="cont-right">
+              <h6 class="text-danger">Lokasi</h6>
+              <p>
+                Jl. Tari Jepen Gg. Tari Enggang 3 RT 11 No 35, Kelurahan
+                Guntung, Bontang Utara, Bontang
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 map-content-9 mb-5">
+          <form action="" method="">
+            <div class="twice-two">
+              <input type="text" class="" placeholder="Nama" />
+              <input type="email" class="" placeholder="Email" />
+            </div>
+            <div class="subject">
+              <input type="text" class="" placeholder="Subject" />
+            </div>
+            <textarea class="" placeholder="Message"></textarea>
+            <div class="text-end">
+              <button type="submit" class="btn btn-danger btn-style mt-4">
+                Kirim Pesan
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <div class="map-iframe">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.795910585165!2d117.47359091409506!3d0.19203476425600893!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x320a13f25e80af77%3A0xe5748f6d7a9ce5f4!2sJl.%20Tari%20Enggang%20No.35%2C%20Guntung%2C%20Kec.%20Bontang%20Utara%2C%20Kota%20Bontang%2C%20Kalimantan%20Timur%2075321!5e0!3m2!1sid!2sid!4v1649388903398!5m2!1sid!2sid"
+        width="100%"
+        height="400"
+        frameborder="0"
+        style="border: 0px"
+        allowfullscreen=""
+      ></iframe>
+    </div>
+    <!-- akhir kontak -->
 
     <!-- script swiper.js -->
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
