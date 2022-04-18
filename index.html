@@ -7,6 +7,8 @@
 
     <!-- query -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
     <!-- swiper.js -->
     <link
       rel="stylesheet"
@@ -29,7 +31,7 @@
   <body id="dashboard">
     <!-- navbar -->
     <!-- <nav class="navbar navbar-expand-lg navbar-dark bg-danger"> -->
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-danger">
+    <!-- <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-danger">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">My Profile</a>
         <button
@@ -61,6 +63,30 @@
               <a class="" href="#contact">contact</a>
             </li>
           </ul>
+        </div>
+      </div>
+    </nav> -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-danger">
+      <div class="container">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ms-auto fs-5 fw-bold">
+            <a class="nav-link" aria-current="page" href="#dashboard">Home</a>
+            <a class="nav-link" href="#about">About</a>
+            <a class="nav-link" href="#resume">Resume</a>
+            <a class="nav-link" href="#gallery">Gallery</a>
+            <a class="nav-link" href="#contact">Contact</a>
+          </div>
         </div>
       </div>
     </nav>
@@ -118,7 +144,9 @@
     <!-- awal resume -->
     <section class="testimonials" id="resume">
       <div class="container">
-        <h2 class="text-center m-5 text-danger"><span>My</span> Resume</h2>
+        <h2 class="text-center m-5">
+          <span class="text-danger">My</span> Resume
+        </h2>
         <div class="swiper mySwiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
@@ -155,23 +183,7 @@
                 </div>
               </div>
             </div>
-            <div class="swiper-slide">
-              <div class="card">
-                <div class="layer"></div>
-                <div class="content">
-                  <p>
-                    saya lulusan Sekolah Menengah Atas Negeri 3 Bontang Utara -
-                    Bontang dari 20017 - 2020
-                  </p>
-                  <div class="imgSwipe">
-                    <img src="image/SMA3.JPEG" alt="#" />
-                  </div>
-                  <div class="details">
-                    <h2>SMAN 3 Bontang Utara</h2>
-                  </div>
-                </div>
-              </div>
-            </div>
+
             <div class="swiper-slide">
               <div class="card">
                 <div class="layer"></div>
@@ -233,7 +245,9 @@
 
     <!-- my galeri -->
     <section class="container pb-5" id="gallery">
-      <h1 class="text-center m-5 text-danger"><span>My</span> Gallery</h1>
+      <h1 class="text-center m-5">
+        <span class="text-danger">My</span> Gallery
+      </h1>
       <div id="container-cards">
         <div class="cards">
           <div class="background-img">
@@ -336,7 +350,7 @@
     <section class="container mb-5" id="contact">
       <div class="row m-5 text-center pb-2">
         <div class="">
-          <h2>Contact Me</h2>
+          <h2>Contact <span class="text-danger"> Me </span></h2>
         </div>
       </div>
       <div class="row">
@@ -347,7 +361,7 @@
             </div>
             <div class="cont-right">
               <h6 class="text-danger">Contact</h6>
-              <p><a href="tel:+62 812 1231 2668">0812 1231 2668</a></p>
+              <p><a href="tel:+6281212312668">0812 1231 2668</a></p>
             </div>
           </div>
           <div class="contact margin-up">
@@ -357,7 +371,7 @@
             <div class="cont-right">
               <h6 class="text-danger">Email Saya</h6>
               <p>
-                <a href="aldiyahyap@gmail.com" class="mail"
+                <a href="mailto:aldiyahyap@gmail.com" class="mail"
                   >aldiyahyap@gmail.com</a
                 >
               </p>
@@ -388,44 +402,28 @@
             <textarea class="" placeholder="Message"></textarea>
             <div class="text-end">
               <button type="submit" class="btn btn-danger btn-style mt-4">
-                Kirim Pesan
+                <a href="mailto:aldiyahyap@gmail.com">kirim pesan</a>
               </button>
             </div>
           </form>
         </div>
       </div>
+      <div class="map-iframe text-center">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127673.82165440408!2d117.43543736196695!3d0.13692806710748442!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x320a0dea859e6237%3A0xd0b2a55f85356781!2sBontang%2C%20Kota%20Bontang%2C%20Kalimantan%20Timur!5e0!3m2!1sid!2sid!4v1650268825914!5m2!1sid!2sid"
+          width="80%"
+          height="480"
+          frameborder="0"
+          style="border: 0px"
+          allowfullscreen=""
+          class="border border-danger border-4"
+        ></iframe>
+      </div>
     </section>
 
-    <div class="map-iframe">
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.795910585165!2d117.47359091409506!3d0.19203476425600893!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x320a13f25e80af77%3A0xe5748f6d7a9ce5f4!2sJl.%20Tari%20Enggang%20No.35%2C%20Guntung%2C%20Kec.%20Bontang%20Utara%2C%20Kota%20Bontang%2C%20Kalimantan%20Timur%2075321!5e0!3m2!1sid!2sid!4v1649388903398!5m2!1sid!2sid"
-        width="100%"
-        height="400"
-        frameborder="0"
-        style="border: 0px"
-        allowfullscreen=""
-      ></iframe>
-    </div>
     <!-- akhir kontak -->
 
     <!-- script swiper.js -->
-    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-    <script>
-      var swiper = new Swiper(".mySwiper", {
-        effect: "coverflow",
-        grabCursor: true,
-        centeredSlides: true,
-        slidesPerView: "auto",
-        coverflowEffect: {
-          rotate: 25,
-          stretch: 0,
-          depth: 100,
-          modifier: 1,
-          slideShadows: true,
-        },
-        loop: true,
-      });
-    </script>
 
     <!-- script.jss -->
     <script src="script.js"></script>

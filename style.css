@@ -12,11 +12,11 @@ a {
   font-size: 20px;
 }
 
-.navbar .navbar-nav li a {
+.navbar .navbar-collapse .navbar-nav a {
   color: white;
   margin-left: 15px;
 }
-.navbar .navbar-nav li a:hover {
+.navbar .navbar-nav a:hover {
   color: rgba(26, 25, 25, 0.733);
 }
 
@@ -312,34 +312,20 @@ section a:hover:not(.jumbotron) {
 
 .map-content-9 form input,
 .map-content-9 form textarea {
-  /* background: var(--bg-light); */
   background-color: rgba(245, 245, 245, 0.637);
   border: 1px solid transparent;
-  /* color: var(--font-color); */
   font-size: 1.2em;
   padding: 12px 15px;
   width: 100%;
-  /* border-radius: var(--border-radius); */
   height: 55px;
 }
-
-/* .map-content-9 h5 {
-  font-size: 25px;
-  line-height: 30px;
-  margin-bottom: 20px;
-  color: var(--heading-color);
-} */
 
 .map-content-9 form textarea {
   resize: none;
   min-height: 140px;
 }
 
-/* .map-content-9 form input:focus,
-.map-content-9 form textarea:focus {
-  outline: none;
-  border: 1px solid var(--primary-color);
-  background: var(--bg-color);
-  box-shadow: none;
-} */
+a {
+  color: #fff;
+}
 /* akhir contact */
