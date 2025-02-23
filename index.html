@@ -29,43 +29,6 @@
   </head>
 
   <body id="dashboard">
-    <!-- navbar -->
-    <!-- <nav class="navbar navbar-expand-lg navbar-dark bg-danger"> -->
-    <!-- <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-danger">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">My Profile</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse text-danger fst-normal">
-          <ul class="navbar-nav ms-auto fs-5">
-            <li class="nav-item pe-2">
-              <a class="" aria-current="page" href="#dashboard">Home</a>
-            </li>
-            <li class="nav-item pe-2">
-              <a class="" href="#about">about</a>
-            </li>
-            <li class="nav-item pe-2">
-              <a class="" href="#resume">resume</a>
-            </li>
-            <li class="nav-item pe-2">
-              <a class="" href="#gallery">gallery</a>
-            </li>
-            <li class="nav-item pe-2">
-              <a class="" href="#contact">contact</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav> -->
     <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-danger">
       <div class="container">
         <button
@@ -94,13 +57,20 @@
 
     <!-- home page -->
     <section class="jumbotron ps-4">
-      <div class="home">
+      <div class="home container">
         <div class="home-content">
-          <h1>Aldi Yahya Perkasa</h1>
-          <div class="text">
-            <span class="typing"></span>
+          <div class="row">
+            <div class="col-md-6">
+              <h1 class="m-0 p-0">Aldi Yahya Perkasa</h1>
+              <div class="text">
+                <span class="typing"></span>
+              </div>
+              <p class="text-light">
+                saya seorang Fresh Graduate dan juga freelancer web developer
+              </p>
+              <a href="#" type="button" class="cta">Portofolio</a>
+            </div>
           </div>
-          <a href="#" type="button" class="cta">Portofolio</a>
         </div>
       </div>
     </section>
@@ -116,24 +86,26 @@
         <div class="row justify-content-center pt-5 pb-5">
           <div class="about-image col-md-4">
             <div class="m-5">
-              <img src="image/profile.jpg.png" alt="" />
+              <img src="image/pass foto jas.jpg" alt="" />
             </div>
           </div>
 
           <div class="col-md-8">
-            <h1>About Me</h1>
+            <div class="section-title">
+              <h1>About Me</h1>
+            </div>
             <h2 class="text-danger">Mahasiswa IT | Freelancer</h2>
             <p class="pt-3">
-              saya seorang Mahasiswa Teknik Informatika semester tengah. Saat
-              ini saya juga bekerja di salah satu Badan Usaha Milik Negara Yaitu
-              BPJS Ketenagakerjaan di bagian Admin. Sebagai seorang mahasiswa,
-              saya selalu meningkatkan diri dalam bidang ilmu pemrograman,
-              mengikuti kursus dan workshop saat waktu luang, serta sering
-              berdiskusi dengan rekan rekan saya apabila mendapatkan studi kasus
-              dari dosen ataupun project tertentu untuk mengasah ilmu saya di
-              bidang pemrograman. Dan saya adalah orang yang semangat mencari
-              peluang kerja maupun pelatihan untuk mengasah kemampuan saya di
-              bidang software engineer.
+              saya seorang Fresh Graduate Teknik Informatika. Saat ini saya juga
+              bekerja di salah satu Badan Usaha Milik Negara Yaitu BPJS
+              Ketenagakerjaan di bagian Admin. Sebagai seorang mahasiswa, saya
+              selalu meningkatkan diri dalam bidang ilmu pemrograman, mengikuti
+              kursus dan workshop saat waktu luang, serta sering berdiskusi
+              dengan rekan rekan saya apabila mendapatkan studi kasus dari dosen
+              ataupun project tertentu untuk mengasah ilmu saya di bidang
+              pemrograman. Dan saya adalah orang yang semangat mencari peluang
+              kerja maupun pelatihan untuk mengasah kemampuan saya di bidang
+              software engineer.
             </p>
           </div>
         </div>
@@ -141,98 +113,161 @@
     </section>
     <!-- akhir about me -->
 
-    <!-- awal resume -->
-    <section class="testimonials" id="resume">
+    <section class="education" id="education">
       <div class="container">
         <h2 class="text-center m-5">
-          <span class="text-danger">My</span> Resume
+          <span class="text-danger">My</span> Education
         </h2>
-        <div class="swiper mySwiper">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <div class="card">
-                <div class="layer"></div>
-                <div class="content">
-                  <p>
-                    saya lulusan Sekolah Dasar Negeri 007 Bontang Utara -
-                    Bontang dari 2008 - 2014
-                  </p>
-                  <div class="imgSwipe">
-                    <img src="image/SD007.jfif" alt="#" />
-                  </div>
-                  <div class="details">
-                    <h2 class="text-start">SDN 007 Bontang Utara</h2>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="card">
-                <div class="layer"></div>
-                <div class="content">
-                  <p>
-                    saya lulusan Sekolah Menengah Pertama Negeri 9 Bontang Utara
-                    - Bontang dari 2014 - 2017
-                  </p>
-                  <div class="imgSwipe">
-                    <img src="image/SMP.jpg" alt="#" />
-                  </div>
-                  <div class="details">
-                    <h2>SMPN 9 Bontang utara</h2>
-                  </div>
-                </div>
-              </div>
-            </div>
+        <div class="row">
+          <!-- Formal Education -->
+          <div class="col-lg-6 my-3">
+            <h3 class="text-center">
+              <span class="text-danger">Formal</span> Education
+            </h3>
+            <div class="card border border-danger mb-4">
+              <img
+                src="image/stitekbontang.png"
+                class="card-img-top"
+                style="
+                  width: 100%;
+                  height: 250px;
+                  object-fit: cover;
+                  object-position: center;
+                "
+                alt="University"
+              />
 
-            <div class="swiper-slide">
-              <div class="card">
-                <div class="layer"></div>
-                <div class="content">
-                  <p>
-                    saya lulusan Sekolah Menengah Atas Negeri 3 Bontang Utara -
-                    Bontang dari 20017 - 2020
-                  </p>
-                  <div class="imgSwipe">
-                    <img src="image/SMA3.JPEG" alt="#" />
-                  </div>
-                  <div class="details">
-                    <h2>SMAN 3 Bontang Utara</h2>
-                  </div>
-                </div>
+              <div class="card-body bg-danger text-light">
+                <h4 class="card-title">Sekolah Tinggi Teknologi Bontang</h4>
+                <p class="m-0 p-0">Teknik Informatika <em>(2020 - 2025)</em></p>
+                <ul>
+                  <li>Algoritma dan Pemrograman</li>
+                  <li>Web Development</li>
+                  <li>Database Management System</li>
+                  <li>Mobile Development</li>
+                  <li>Game Development</li>
+                </ul>
               </div>
             </div>
-            <div class="swiper-slide">
-              <div class="card">
-                <div class="layer"></div>
-                <div class="content">
-                  <p>
-                    saya pernah mengikuti pelatihan sebagai administrasi
-                    perkantoran dari juni 2021 - agustus 2021
-                  </p>
-                  <div class="imgSwipe">
-                    <img src="image/suvi.jpeg" alt="#" />
-                  </div>
-                  <div class="details">
-                    <h2>Suvi Training</h2>
-                  </div>
-                </div>
+            <div class="card border border-danger">
+              <div class="text-center">
+                <img
+                  src="image/SMAN3.PNG"
+                  class="card-img-top text-center"
+                  style="
+                    width: 40%;
+                    height: 250px;
+                    object-fit: cover;
+                    object-position: center;
+                  "
+                  alt="High School"
+                />
+              </div>
+              <div class="card-body bg-danger text-light">
+                <h4 class="card-title">SMA Negeri 1 Bontang</h4>
+                <p class="m-0 p-0">IPA <em>(2017 - 2020)</em></p>
+                <ul>
+                  <li>
+                    Menganalisis buku cerita atau novel yang dibaca dalam kurun
+                    waktu 7-10 menit lalu menyetorkan hasil analisis ke mentor
+                    masing masing
+                  </li>
+                </ul>
               </div>
             </div>
+          </div>
 
-            <div class="swiper-slide">
-              <div class="card">
-                <div class="layer"></div>
-                <div class="content">
-                  <p>
-                    saya memiliki pengalaman bekerja di salah satu Badan Usaha
-                    Milik Negara yaitu BPJS Ketenagakerjaan dibagian Kepesertaan
-                    / Administrasi dari Agustus 2021 - Sekarang
-                  </p>
-                  <div class="imgSwipe">
-                    <img src="image/bpjs2.jpeg" alt="#" />
+          <!-- Online Certifications -->
+          <div class="col-lg-6 my-3">
+            <h3 class="text-center">
+              <span class="text-danger">Online</span> Certifications
+            </h3>
+            <div class="row">
+              <!-- Certification 1 -->
+              <div class="col-md-6 my-2">
+                <div class="card border border-danger">
+                  <img
+                    src="image/dicoding.png"
+                    class="card-img-top"
+                    alt="Cert 1"
+                  />
+                  <div class="card-body bg-light text-center">
+                    <h5 class="card-title">Pemrograman Web</h5>
+                    <p class="m-0"><em>Dicoding - 2021</em></p>
                   </div>
-                  <div class="details">
-                    <h2>BPJS Ketenagakerjaan</h2>
+                </div>
+              </div>
+              <!-- Certification 2 -->
+              <div class="col-md-6 my-2">
+                <div class="card border border-danger">
+                  <img
+                    src="image/LPKCTI-proweb.png"
+                    class="card-img-top"
+                    alt="Cert 2"
+                  />
+                  <div class="card-body bg-light text-center">
+                    <h5 class="card-title">Pemrograman Web</h5>
+                    <p class="m-0"><em>LPKCTI - 2021</em></p>
+                  </div>
+                </div>
+              </div>
+              <!-- Certification 3 -->
+              <div class="col-md-6 my-2">
+                <div class="card border border-danger">
+                  <img
+                    src="image/eduwork.png"
+                    class="card-img-top"
+                    alt="Cert 3"
+                  />
+                  <div class="card-body bg-light text-center">
+                    <h5 class="card-title">Software Engineering</h5>
+                    <p class="m-0"><em>Eduwork - 2021</em></p>
+                  </div>
+                </div>
+              </div>
+              <!-- Certification 4 -->
+              <div class="col-md-6 my-2">
+                <div class="card border border-danger">
+                  <img
+                    src="image/codepolitan.png"
+                    class="card-img-top"
+                    alt="Cert 4"
+                  />
+                  <div class="card-body bg-light text-center">
+                    <h5 class="card-title">
+                      Alibaba Cloud Elastic Compute Servise
+                    </h5>
+                    <p class="m-0">
+                      <em>Alibaba Cloud x Codepolitan - 2022</em>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- Certification 5 -->
+              <div class="col-md-6 my-2">
+                <div class="card border border-danger">
+                  <img
+                    src="image/DQLab1.png"
+                    class="card-img-top"
+                    alt="Cert 5"
+                  />
+                  <div class="card-body bg-light text-center">
+                    <h5 class="card-title">Data Science With Python</h5>
+                    <p class="m-0"><em>DQLab - 2022</em></p>
+                  </div>
+                </div>
+              </div>
+              <!-- Certification 6 -->
+              <div class="col-md-6 my-2">
+                <div class="card border border-danger">
+                  <img
+                    src="image/DQLab2.png"
+                    class="card-img-top"
+                    alt="Cert 6"
+                  />
+                  <div class="card-body bg-light text-center">
+                    <h5 class="card-title">Data Science With Python</h5>
+                    <p class="m-0"><em>DQLab - 2022</em></p>
                   </div>
                 </div>
               </div>
@@ -241,49 +276,139 @@
         </div>
       </div>
     </section>
-    <!-- akhir resume -->
+
+    <!-- awal experience -->
+    <section class="experience py-5" id="experience">
+      <div class="container">
+        <h2 class="text-center mb-5">
+          <span class="text-danger">My</span> Experience
+        </h2>
+        <div class="row d-flex justify-content-center">
+          <!-- Experience 1 -->
+          <div class="col-md-8 my-3">
+            <div class="card border-0 shadow-sm experience-card bg-light">
+              <div class="card-body">
+                <div class="d-flex align-items-center">
+                  <h3 class="mb-0 text-danger">BPJS Ketenagakerjaan</h3>
+                  <span class="badge py-2 bg-primary ms-auto"
+                    >Staff Administrasi</span
+                  >
+                </div>
+                <p class="text-muted">Agustus 2021 - Mei 2022</p>
+                <ul>
+                  <li>
+                    Melakukan penarikan laporan dan perhitungan piutang serta
+                    kode iuran perusahaan.
+                  </li>
+                  <li>
+                    Pendaftaran dan penutupan perusahaan di BPJS
+                    Ketenagakerjaan.
+                  </li>
+                  <li>Validasi data peserta BPJS Ketenagakerjaan.</li>
+                  <li>
+                    Input data dalam Jasa Kontruksi sesuai posisi pekerjaan.
+                  </li>
+                  <li>
+                    Membantu bagian pelayanan klaim JHT (Jaminan Hari Tua).
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Experience 2 -->
+          <div class="col-md-8 my-3">
+            <div class="card border-0 shadow-sm experience-card bg-light">
+              <div class="card-body">
+                <div class="d-flex align-items-center">
+                  <h3 class="mb-0 text-danger">PT. Kaltim Methanol Industri</h3>
+                  <span class="badge py-2 bg-primary ms-auto">IT Section</span>
+                </div>
+                <p class="text-muted">Maret - Mei 2023</p>
+                <ul>
+                  <li>
+                    menganalisis hal hal yang terkait studi kasus yang diangkat
+                    pada seminar Kerja Praktek di PT.KMI dan merancang sistem
+                  </li>
+                  <li>
+                    membangun sistem dari hasil analisis dan perancangan studi
+                    kasus
+                  </li>
+                  <li>
+                    mempelajari bagaimana mengatur pengaturan komputer sesuai
+                    standar perusahaan, menyambungkan kabel mic agar saling
+                    terhubung menjadi satu kesatuan aliran listrik, dan
+                    mempelajari bagaimana memperbaiki dan merawat perangkat IT
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Experience 3 -->
+          <div class="col-md-8 my-3">
+            <div class="card border-0 shadow-sm experience-card bg-light">
+              <div class="card-body">
+                <div class="d-flex align-items-center">
+                  <h3 class="mb-0 text-danger">BPJS Ketenagakerjaan</h3>
+                  <span class="badge py-2 bg-primary ms-auto">IT Section</span>
+                </div>
+                <p class="text-muted">Maret - Mei 2023</p>
+                <p>
+                  Mengelola jaringan dan perangkat keras di kantor BPJS
+                  Ketenagakerjaan.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- akhir experience -->
 
     <!-- my galeri -->
-    <section class="container pb-5" id="gallery">
+    <section class="container pb-5" id="project">
       <h1 class="text-center m-5">
-        <span class="text-danger">My</span> Gallery
+        <span class="text-danger">My</span> Project
       </h1>
       <div id="container-cards">
         <div class="cards">
           <div class="background-img">
-            <img src="image/suvi.jpeg" alt="" />
+            <img src="image/pemeliharaan-perangkat.png" alt="" />
           </div>
           <div class="content">
             <div class="details">
               <h2 class="text-light">
-                Suvi Training <br />
-                <span>General Office</span>
+                Sistem Informasi Pemeliharaan Perangkat IT Menggunakan Fitur
+                Kode QR <br />
+                <span>Web Development</span>
               </h2>
             </div>
           </div>
         </div>
         <div class="cards">
           <div class="background-img">
-            <img src="image/hmti.jpeg" alt="" />
+            <img src="image/.jpeg" alt="" />
           </div>
           <div class="content">
             <div class="details">
               <h2 class="text-light">
-                HMTI <br />
-                <span>Himpunan Mahasiswa Teknik Informatika</span>
+                Sistem Informasi Pengajuan Cuti <br />
+                <span>Web Development</span>
               </h2>
             </div>
           </div>
         </div>
         <div class="cards">
           <div class="background-img">
-            <img src="image/cpanel.jpeg" alt="" />
+            <img src="image/.jpeg" alt="" />
           </div>
           <div class="content">
             <div class="details">
               <h2 class="text-light">
-                CPANEL <br />
-                <span>Computer, Programming and Networking Layer</span>
+                Sistem Informasi Peminjaman Gedung <br />
+                <span>Web Development</span>
               </h2>
             </div>
           </div>
@@ -291,39 +416,26 @@
 
         <div class="cards">
           <div class="background-img">
-            <img src="image/bpjs1.jpeg" alt="" />
+            <img src="image/.jpeg" alt="" />
           </div>
           <div class="content">
             <div class="details">
               <h2 class="text-light">
-                BPJamsostek <br />
-                <span>Praktek Kerja Lapangan</span>
+                Sistem informasi Pengkategori Tiket Bioskop <br />
+                <span>Web Development</span>
               </h2>
             </div>
           </div>
         </div>
         <div class="cards">
           <div class="background-img">
-            <img src="image/salak2.jpeg" alt="" />
+            <img src="image/.jpeg" alt="" />
           </div>
           <div class="content">
             <div class="details">
               <h2 class="text-light">
-                Kelurahan Salak <br />
-                <span>My Trip My Adventure</span>
-              </h2>
-            </div>
-          </div>
-        </div>
-        <div class="cards">
-          <div class="background-img">
-            <img src="image/lab.jpeg" alt="" />
-          </div>
-          <div class="content">
-            <div class="details">
-              <h2 class="text-light">
-                praktikum <br />
-                <span>Teknik Informatika</span>
+                Sistem Informasi Pengolahan Data Soal<br />
+                <span>Web Development</span>
               </h2>
             </div>
           </div>
