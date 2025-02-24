@@ -27,8 +27,11 @@ body {
 
 .jumbotron {
   display: flex;
-  background: linear-gradient(rgba(66, 62, 62, 0.178), rgba(87, 22, 35, 0.39)),
-    url(image/new-bg.jpg);
+  /* background-color: #ebf9ff; */
+  background: linear-gradient(#f2f2ff, #ebf9ff);
+  /* background: linear-gradient(#add8e6, #ebf9ff); */
+  /* background: linear-gradient(rgba(66, 62, 62, 0.178), rgba(87, 22, 35, 0.39)),
+    url(image/new-bg.jpg); */
   /* background: linear-gradient(rgba(0, 0, 0, 0.644), rgba(204, 24, 60, 0.185)),
     url(image/new-bg.jpg); */
   background-position: top center;
@@ -46,8 +49,8 @@ body {
   font-size: 3.5rem;
   position: relative;
   font-style: italic;
-  /* font-family: "Josefin Sans", sans-serif;
-  font-weight: 400; */
+  font-weight: bold;
+  color: #6f34fe;
 }
 
 .jumbotron .home-content .text span {
@@ -71,13 +74,20 @@ section a:hover:not(.jumbotron) {
 }
 
 .text span {
-  color: rgb(255, 0, 0);
+  color: #000;
 }
 /* akhir home page */
 
 /* about me */
 #about {
   padding-top: 100px;
+}
+.about h1 {
+  color: #000;
+}
+.about-title {
+  color: #6f34fe;
+  /* color: #3f396d; */
 }
 
 #about .col-md-8 h1 {
@@ -108,7 +118,7 @@ section a:hover:not(.jumbotron) {
   /* border: 10px solid red;
   border-style: solid;
   border-width: 20px 0px 0px 20px; */
-  box-shadow: -15px -15px 3px crimson;
+  box-shadow: -15px -15px 3px #6f34fe;
 }
 
 #about .col-md-8 p {
@@ -117,43 +127,58 @@ section a:hover:not(.jumbotron) {
 
 /* akhir about me */
 
-/* experience */
-.experience-card {
-  background-color: #ffffff; /* Warna putih untuk background card */
-  transition: transform 0.3s, box-shadow 0.3s;
-  border-radius: 12px; /* Membuat sudut card lebih halus */
+/* awal experience */
+
+.experience .card-experience .card-hover {
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.experience-card:hover {
+.experience .card-experience .card-hover:hover {
   transform: scale(1.05);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0px 16px #fca61f;
 }
 
-.experience h2 span.text-primary {
-  color: #007bff; /* Warna biru cerah untuk judul */
+.experience .card-experience .card-title {
+  transition: color 0.3s ease;
 }
 
-.experience .card-body {
-  color: #333; /* Teks berwarna gelap untuk keterbacaan yang baik */
+.experience .card-experience .card-hover:hover .card-title {
+  color: #3f396d; /* Slight color change on hover */
 }
 
-.experience .text-primary {
-  color: #007bff !important; /* Warna biru cerah untuk judul pengalaman */
+.experience .card-experience .icon {
+  transition: color 0.3s ease;
 }
 
-.experience .text-muted {
-  color: #6c757d !important; /* Warna abu-abu untuk tanggal */
-}
-
-.experience ul {
-  list-style-type: none;
-  padding-left: 0;
-}
-
-.experience ul li::before {
-  content: "• ";
-  color: #dc3545; /* Warna bullet biru */
+.experience-title {
   font-weight: bold;
+  font-size: 2.5rem;
+  color: #3f396d;
+}
+
+.experience-span {
+  color: #6f34fe;
+}
+
+.icon-experience {
+  font-size: 2rem;
+  color: #fca61f;
+}
+
+.experience-heading {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #3f396d;
+}
+
+.experience-text {
+  font-size: 1rem;
+  color: #000000;
+  text-align: left;
 }
 
 /* akhir experience */
