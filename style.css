@@ -13,16 +13,21 @@ body {
   font-weight: 400;
 }
 
-.navbar .container .navbar-brand {
-  font-size: 20px;
+.navbar-card {
+  border-radius: 15px; /* Membuat sudut membulat */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Menambahkan shadow */
+  background: #001146;
+  border-bottom: 4px solid #fca61f;
+  /* overflow: hidden; */
 }
 
-.navbar .navbar-collapse .navbar-nav a {
-  color: white;
-  margin-left: 15px;
+.navbar-nav a {
+  color: rgb(255, 255, 255);
+  position: relative;
 }
-.navbar .navbar-nav a:hover {
-  color: rgba(26, 25, 25, 0.733);
+
+.navbar-nav a:hover {
+  color: #fca61f;
 }
 
 .jumbotron {
@@ -55,17 +60,6 @@ body {
 
 .jumbotron .home-content .text span {
   font-size: 1.6rem;
-}
-
-.jumbotron .home-content a {
-  display: inline-block;
-  background: crimson;
-  color: white;
-  font-size: 15px;
-  padding: 10px 20px;
-  margin-top: 20px;
-  border-radius: 6px;
-  border: 1px solid crimson;
 }
 
 section a:hover:not(.jumbotron) {
@@ -118,7 +112,7 @@ section a:hover:not(.jumbotron) {
   /* border: 10px solid red;
   border-style: solid;
   border-width: 20px 0px 0px 20px; */
-  box-shadow: -15px -15px 3px #6f34fe;
+  box-shadow: -15px -15px 3px #001146;
 }
 
 #about .col-md-8 p {
@@ -172,7 +166,7 @@ section a:hover:not(.jumbotron) {
 .experience-heading {
   font-size: 1.4rem;
   font-weight: bold;
-  color: #3f396d;
+  color: #001146;
 }
 
 .experience-text {
@@ -183,7 +177,7 @@ section a:hover:not(.jumbotron) {
 
 /* akhir experience */
 
-/* my gallery */
+/* my project */
 #project {
   padding-top: 50px;
 }
@@ -270,7 +264,7 @@ section a:hover:not(.jumbotron) {
 .container #container-cards .content h2 span {
   font-size: 1.2rem;
 }
-/* akhir gallery */
+/* akhir project */
 
 /* awal contact */
 #contact {
