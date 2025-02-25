@@ -15,6 +15,14 @@
       href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
     />
 
+    <!-- vendor -->
+    <link
+      href="assets/owl.carousel/assets/owl.carousel.min.css"
+      rel="stylesheet"
+    />
+    <link href="assets/boxicons/css/boxicons.min.css" rel="stylesheet" />
+    <link href="assets/venobox/venobox.css" rel="stylesheet" />
+
     <!-- google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -81,7 +89,7 @@
                       <a class="nav-link" href="#experience">Experience</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#project">Project</a>
+                      <a class="nav-link" href="#portfolio">Project</a>
                     </li>
                     <li class="nav-item">
                       <a class="nav-link" href="#skill">Skill</a>
@@ -234,110 +242,137 @@
             <h3 class="text-center" style="color: #3f396d">
               <span>Online</span> Certifications
             </h3>
-            <div class="row">
+            <div class="row" id="container-cards">
               <!-- Certification 1 -->
               <div class="col-md-6 my-2">
-                <div class="card border" style="border-color: #6f34fe">
-                  <img
-                    src="image/dicoding.png"
-                    class="card-img-top"
-                    alt="Cert 1"
-                  />
+                <div class="card cards border">
+                  <div class="background-img">
+                    <img
+                      src="image/dicoding.png"
+                      class="card-img-top"
+                      alt="Cert 1"
+                      style="object-fit: cover; object-position: center"
+                    />
+                  </div>
                   <div
-                    class="card-body text-center"
-                    style="background-color: #3f396d; color: #fff"
+                    class="card-body content text-center"
+                    style="color: #fff"
                   >
-                    <h5 class="card-title">Pemrograman Web</h5>
-                    <p class="m-0"><em>Dicoding - 2021</em></p>
+                    <div class="details">
+                      <p class="card-title">Pemrograman Web</p>
+                      <p class="m-0"><em>Dicoding - 2021</em></p>
+                    </div>
                   </div>
                 </div>
               </div>
               <!-- Certification 2 -->
               <div class="col-md-6 my-2">
-                <div class="card border" style="border-color: #6f34fe">
-                  <img
-                    src="image/LPKCTI-proweb.png"
-                    class="card-img-top"
-                    alt="Cert 2"
-                  />
+                <div class="card cards border">
+                  <div class="background-img">
+                    <img
+                      src="image/LPKCTI-proweb.png"
+                      class="card-img-top"
+                      alt="Cert 2"
+                      style="object-fit: cover; object-position: center"
+                    />
+                  </div>
                   <div
-                    class="card-body text-center"
-                    style="background-color: #3f396d; color: #fff"
+                    class="card-body content text-center"
+                    style="color: #fff"
                   >
-                    <h5 class="card-title">Pemrograman Web</h5>
-                    <p class="m-0"><em>LPKCTI - 2021</em></p>
+                    <div class="details">
+                      <p class="card-title">Pemrograman Web</p>
+                      <p class="m-0"><em>LPKCTI - 2021</em></p>
+                    </div>
                   </div>
                 </div>
               </div>
               <!-- Certification 3 -->
               <div class="col-md-6 my-2">
-                <div class="card border" style="border-color: #6f34fe">
-                  <img
-                    src="image/eduwork.png"
-                    class="card-img-top"
-                    alt="Cert 3"
-                  />
+                <div class="card cards border">
+                  <div class="background-img">
+                    <img
+                      src="image/eduwork.png"
+                      class="card-img-top"
+                      alt="Cert 3"
+                      style="object-fit: cover; object-position: center"
+                    />
+                  </div>
                   <div
-                    class="card-body text-center"
-                    style="background-color: #3f396d; color: #fff"
+                    class="card-body content text-center"
+                    style="color: #fff"
                   >
-                    <h5 class="card-title">Software Engineering</h5>
-                    <p class="m-0"><em>Eduwork - 2021</em></p>
+                    <div class="details">
+                      <p class="card-title">Software Engineering</p>
+                      <p class="m-0"><em>Eduwork - 2021</em></p>
+                    </div>
                   </div>
                 </div>
               </div>
               <!-- Certification 4 -->
               <div class="col-md-6 my-2">
-                <div class="card border" style="border-color: #6f34fe">
-                  <img
-                    src="image/codepolitan.png"
-                    class="card-img-top"
-                    alt="Cert 4"
-                  />
+                <div class="card cards border">
+                  <div class="background-img">
+                    <img
+                      src="image/codepolitan.png"
+                      class="card-img-top"
+                      alt="Cert 4"
+                      style="object-fit: cover; object-position: center"
+                    />
+                  </div>
                   <div
-                    class="card-body text-center"
-                    style="background-color: #3f396d; color: #fff"
+                    class="card-body content text-center"
+                    style="color: #fff"
                   >
-                    <h5 class="card-title">
-                      Alibaba Cloud Elastic Compute Service
-                    </h5>
-                    <p class="m-0">
-                      <em>Alibaba Cloud x Codepolitan - 2022</em>
-                    </p>
+                    <div class="details">
+                      <p class="m-0">
+                        <em>Alibaba Cloud x Codepolitan - 2022</em>
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
               <!-- Certification 5 -->
               <div class="col-md-6 my-2">
-                <div class="card border" style="border-color: #6f34fe">
-                  <img
-                    src="image/DQLab1.png"
-                    class="card-img-top"
-                    alt="Cert 5"
-                  />
+                <div class="card cards border">
+                  <div class="background-img">
+                    <img
+                      src="image/DQLab1.png"
+                      class="card-img-top"
+                      alt="Cert 5"
+                      style="object-fit: cover; object-position: center"
+                    />
+                  </div>
                   <div
-                    class="card-body text-center"
+                    class="card-body content text-center"
                     style="background-color: #3f396d; color: #fff"
                   >
-                    <h5 class="card-title">Data Science With Python</h5>
-                    <p class="m-0"><em>DQLab - 2022</em></p>
+                    <div class="details">
+                      <p class="card-title">Data Science With Python</p>
+                      <p class="m-0"><em>DQLab - 2022</em></p>
+                    </div>
                   </div>
                 </div>
               </div>
               <!-- Certification 6 -->
               <div class="col-md-6 my-2">
-                <div class="card border" style="border-color: #6f34fe">
-                  <img
-                    src="image/DQLab2.png"
-                    class="card-img-top"
-                    alt="Cert 6"
-                  />
+                <div class="card cards border" style="border-color: #6f34fe">
+                  <div class="background-img">
+                    <img
+                      src="image/DQLab2.png"
+                      class="card-img-top"
+                      alt="Cert 6"
+                      style="object-fit: cover; object-position: center"
+                    />
+                  </div>
                   <div
-                    class="card-body text-center"
+                    class="card-body content text-center"
                     style="background-color: #3f396d; color: #fff"
                   >
-                    <h5 class="card-title">Data Science With Python</h5>
-                    <p class="m-0"><em>DQLab - 2022</em></p>
+                    <div class="details">
+                      <p class="card-title">Data Science With Python</p>
+                      <p class="m-0"><em>DQLab - 2022</em></p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -427,8 +462,8 @@
 
     <!-- akhir experience -->
 
-    <!-- my galeri -->
-    <section class="container pb-5" id="project">
+    <!-- my project -->
+    <!-- <section class="container pb-5" id="project">
       <h1 class="text-center m-5">
         <span class="text-danger">My</span> Project
       </h1>
@@ -514,25 +549,156 @@
           </div>
         </div>
       </div>
+    </section> -->
+    <!-- akhir my project -->
+
+    <!-- project -->
+    <section id="portfolio" class="portfolio my-5 py-5">
+      <div class="container">
+        <h2 class="text-center m-5 fw-bold fs-1" style="color: #3f396d">
+          <span>My</span> Project
+        </h2>
+
+        <div class="row d-flex justify-content-center portfolio-container">
+          <!-- project 1 -->
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <h3 class="text-center">Sistem Informasi Pemeliharaan Perangkat</h3>
+            <div class="portfolio-wrap border">
+              <img
+                src="image/pemeliharaan-perangkat.png"
+                class="img-fluid"
+                alt=""
+                style="object-fit: cover; object-position: center"
+              />
+              <div class="portfolio-info border">
+                <div class="portfolio-links">
+                  <a
+                    href="project/TA.html"
+                    data-gall="portfolioDetailsGallery"
+                    data-vbtype="iframe"
+                    class="venobox"
+                    title="Project Details"
+                    ><i class="bx bx-info-circle"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- project 2 -->
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <h3 class="text-center">Sistem Informasi Peminjaman Gedung</h3>
+            <div class="portfolio-wrap border">
+              <img
+                src="image/pemeliharaan-perangkat.png"
+                class="img-fluid"
+                alt=""
+                style="object-fit: cover; object-position: center"
+              />
+              <div class="portfolio-info border">
+                <div class="portfolio-links">
+                  <a
+                    href="project/TA.html"
+                    data-gall="portfolioDetailsGallery"
+                    data-vbtype="iframe"
+                    class="venobox"
+                    title="Project Details"
+                    ><i class="bx bx-info-circle"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <h3 class="text-center">
+              Company <br />
+              Profile
+            </h3>
+            <div class="portfolio-wrap border">
+              <img
+                src="image/pemeliharaan-perangkat.png"
+                class="img-fluid"
+                alt=""
+                style="object-fit: cover; object-position: center"
+              />
+              <div class="portfolio-info border">
+                <div class="portfolio-links">
+                  <a
+                    href="project/TA.html"
+                    data-gall="portfolioDetailsGallery"
+                    data-vbtype="iframe"
+                    class="venobox"
+                    title="Project Details"
+                    ><i class="bx bx-info-circle"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <h3 class="text-center">Sistem Informasi Pengolahan Data Soal</h3>
+            <div class="portfolio-wrap border">
+              <img
+                src="image/pemeliharaan-perangkat.png"
+                class="img-fluid"
+                alt=""
+                style="object-fit: cover; object-position: center"
+              />
+              <div class="portfolio-info border">
+                <div class="portfolio-links">
+                  <a
+                    href="project/TA.html"
+                    data-gall="portfolioDetailsGallery"
+                    data-vbtype="iframe"
+                    class="venobox"
+                    title="Project Details"
+                    ><i class="bx bx-info-circle"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <h3 class="text-center">Sistem ketagori tiket bioskop</h3>
+            <div class="portfolio-wrap border">
+              <img
+                src="image/pemeliharaan-perangkat.png"
+                class="img-fluid"
+                alt=""
+                style="object-fit: cover; object-position: center"
+              />
+              <div class="portfolio-info border">
+                <div class="portfolio-links">
+                  <a
+                    href="project/TA.html"
+                    data-gall="portfolioDetailsGallery"
+                    data-vbtype="iframe"
+                    class="venobox"
+                    title="Project Details"
+                    ><i class="bx bx-info-circle"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
-    <!-- akhir my galeri -->
+    <!-- akhir project -->
 
     <!-- contact me -->
 
     <section class="container mb-5" id="contact">
-      <div class="row m-5 text-center pb-2">
-        <div class="">
-          <h2>Contact <span class="text-danger"> Me </span></h2>
-        </div>
-      </div>
+      <h2 class="text-center m-5 fw-bold fs-1" style="color: #6f34fe">
+        <span style="color: #3f396d">Contact </span>Me
+      </h2>
       <div class="row">
-        <div class="col-md-6 cont-details">
+        <div class="col-md-6 cont-details ms-0 ps-0">
           <div class="contact">
             <div class="">
               <span class=""></span>
             </div>
-            <div class="cont-right">
-              <h6 class="text-danger">Contact</h6>
+            <div class="">
+              <h6 class="" style="color: #6f34fe">Contact</h6>
               <p><a href="tel:+6281212312668">0812 1231 2668</a></p>
             </div>
           </div>
@@ -540,8 +706,8 @@
             <div class="cont-left text-center">
               <span class=""></span>
             </div>
-            <div class="cont-right">
-              <h6 class="text-danger">Email Saya</h6>
+            <div class="">
+              <h6 class="" style="color: #6f34fe">Email Saya</h6>
               <p>
                 <a href="mailto:aldiyahyap@gmail.com" class="mail"
                   >aldiyahyap@gmail.com</a
@@ -554,7 +720,7 @@
               <span class=""></span>
             </div>
             <div class="cont-right">
-              <h6 class="text-danger">Lokasi</h6>
+              <h6 class="" style="color: #6f34fe">Lokasi</h6>
               <p>
                 Jl. Tari Jepen Gg. Tari Enggang 3 RT 11 No 35, Kelurahan
                 Guntung, Bontang Utara, Bontang
@@ -573,7 +739,11 @@
             </div>
             <textarea class="" placeholder="Message"></textarea>
             <div class="text-end">
-              <button type="submit" class="btn btn-danger btn-style mt-4">
+              <button
+                type="submit"
+                class="btn mt-4"
+                style="background-color: #3f396d"
+              >
                 <a href="mailto:aldiyahyap@gmail.com">kirim pesan</a>
               </button>
             </div>
@@ -586,16 +756,16 @@
           width="80%"
           height="480"
           frameborder="0"
-          style="border: 0px"
           allowfullscreen=""
-          class="border border-danger border-4"
+          class="border"
+          style="border-color: #6f34fe"
         ></iframe>
       </div>
     </section>
-
     <!-- akhir kontak -->
-
-    <!-- script swiper.js -->
+    <script src="assets/jquery/jquery.min.js"></script>
+    <script src="assets/owl.carousel/owl.carousel.min.js"></script>
+    <script src="assets/venobox/venobox.min.js"></script>
 
     <!-- script.jss -->
     <script src="script.js"></script>
