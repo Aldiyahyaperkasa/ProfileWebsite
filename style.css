@@ -62,8 +62,19 @@ body {
   font-size: 1.6rem;
 }
 
-section a:hover:not(.jumbotron) {
+.jumbotron .home-content a {
+  display: inline-block;
+  background: #fca61f;
   color: white;
+  font-size: 15px;
+  padding: 10px 20px;
+  margin-top: 20px;
+  border-radius: 6px;
+  border: 1px solid #fca61f;
+}
+
+section a:hover:not(.jumbotron) {
+  color: #001146;
   background: none;
 }
 
